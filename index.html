@@ -4,14 +4,14 @@
 </head>
 <body>
 <table>
-<th>
+<tr>
 <td>\</td>
 <td>월</td>
 <td>화</td>
 <td>수</td>
 <td>목</td>
 <td>금</td>
-</th>
+</tr>
 <tr>
 <td>1교시</td>
 <td class="e"></td>
@@ -82,7 +82,7 @@ var h=querySelectorAll(".h");
 var i=querySelectorAll(".i");
 var l=querySelectorAll(".l");
 var t19 = ["화작","영독작","사문탐","현대문학","수과탐","확통","중국어","융과","정법","영어문화"];
-a.forEach(item => item.innerText=t19[0]);
+a.forEach(function(ele) {ele.innerText=t19[0]});
 b.forEach(item => item.innerText=t19[1]);
 c.forEach(item => item.innerText=t19[2]);
 d.forEach(item => item.innerText=t19[3]);
