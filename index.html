@@ -69,6 +69,11 @@
 <td class="d"></td>
 </tr>
 </table>
+<select onchange="selectBoxChange(this.value);">
+<option>번호 선택</option>
+<option value="1">1번</option>
+<option value="19">19번</option>
+</select>
 </body>
 <script>
 var a = document.querySelectorAll(".a");
@@ -82,7 +87,11 @@ var h = document.querySelectorAll(".h");
 var i = document.querySelectorAll(".i");
 var l = document.querySelectorAll(".l");
 var t19 = ["화작","영독작","사문탐","현대문학","수과탐","확통","중국어","융과","정법","영어문화"];
-a.forEach(item => item.innerText = t19[0]);
+var t1 = ["hj","ir","jr","jt","ur","j5","k6","ff","dj","dd"]
+var sel = document.querySelector("select");
+var val = sel.value;
+eval
+a.forEach(item => item.innerText = t[`sel`][0]));
 b.forEach(item => item.innerText=t19[1]);
 c.forEach(item => item.innerText=t19[2]);
 d.forEach(item => item.innerText=t19[3]);
