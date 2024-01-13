@@ -1,106 +1,110 @@
 <!doctype html>
 <html>
+
 <head>
 </head>
+
 <body>
-<table>
-<tr>
-<td>\</td>
-<td>월</td>
-<td>화</td>
-<td>수</td>
-<td>목</td>
-<td>금</td>
-</tr>
-<tr>
-<td>1교시</td>
-<td class="e"></td>
-<td class="b"></td>
-<td class="d"></td>
-<td class="h"></td>
-<td class="c"></td>
-</tr>
-<tr>
-<td>2교시</td>
-<td class="f"></td>
-<td class="e"></td>
-<td class="f"></td>
-<td class="c"></td>
-<td class="h"></td>
-</tr>
-<tr>
-<td>3교시</td>
-<td class="b"></td>
-<td class="a">ㅁ</td>
-<td class="i"></td>
-<td class="g"></td>
-<td class="b"></td>
-</tr>
-<tr>
-<td>4교시</td>
-<td class="h"></td>
-<td class="c"></td>
-<td class="a">ㅁ</td>
-<td class="a">ㅁ</td>
-<td class="e"></td>
-</tr>
-<tr>
-<td>5교시</td>
-<td class="d"></td>
-<td class="l"></td>
-<td>창체</td>
-<td class="l"></td>
-<td class="i"></td>
-</tr>
-<tr>
-<td>6교시</td>
-<td class="i"></td>
-<td>창봉</td>
-<td>창체</td>
-<td>창진</td>
-<td class="g"></td>
-</tr>
-<tr>
-<td>7교시</td>
-<td class="g"></td>
-<td>스생</td>
-<td></td>
-<td class="f"></td>
-<td class="d"></td>
-</tr>
-</table>
-<select id="s" onchange="selectBox()">
-<option>번호 선택</option>
-<option value="1">1번</option>
-<option value="19">19번</option>
-</select>
+    <table>
+        <tr>
+            <td>\</td>
+            <td>월</td>
+            <td>화</td>
+            <td>수</td>
+            <td>목</td>
+            <td>금</td>
+        </tr>
+        <tr>
+            <td>1교시</td>
+            <td class="e"></td>
+            <td class="b"></td>
+            <td class="d"></td>
+            <td class="h"></td>
+            <td class="c"></td>
+        </tr>
+        <tr>
+            <td>2교시</td>
+            <td class="f"></td>
+            <td class="e"></td>
+            <td class="f"></td>
+            <td class="c"></td>
+            <td class="h"></td>
+        </tr>
+        <tr>
+            <td>3교시</td>
+            <td class="b"></td>
+            <td class="a">ㅁ</td>
+            <td class="i"></td>
+            <td class="g"></td>
+            <td class="b"></td>
+        </tr>
+        <tr>
+            <td>4교시</td>
+            <td class="h"></td>
+            <td class="c"></td>
+            <td class="a">ㅁ</td>
+            <td class="a">ㅁ</td>
+            <td class="e"></td>
+        </tr>
+        <tr>
+            <td>5교시</td>
+            <td class="d"></td>
+            <td class="l"></td>
+            <td>창체</td>
+            <td class="l"></td>
+            <td class="i"></td>
+        </tr>
+        <tr>
+            <td>6교시</td>
+            <td class="i"></td>
+            <td>창봉</td>
+            <td>창체</td>
+            <td>창진</td>
+            <td class="g"></td>
+        </tr>
+        <tr>
+            <td>7교시</td>
+            <td class="g"></td>
+            <td>스생</td>
+            <td></td>
+            <td class="f"></td>
+            <td class="d"></td>
+        </tr>
+    </table>
+    <select id="s" onchange="selectBox()">
+        <option>번호 선택</option>
+        <option value="1">1번</option>
+        <option value="19">19번</option>
+    </select>
 </body>
 <script>
-var a = document.querySelectorAll(".a");
-var b = document.querySelectorAll(".b");
-var c = document.querySelectorAll(".c");
-var d = document.querySelectorAll(".d");
-var e = document.querySelectorAll(".e");
-var f = document.querySelectorAll(".f");
-var g = document.querySelectorAll(".g");
-var h = document.querySelectorAll(".h");
-var i = document.querySelectorAll(".i");
-var l = document.querySelectorAll(".l");
-var t19 = ["화작","영독작","사문탐","현대문학","수과탐","확통","중국어","융과","정법","영어문화"];
-var t1 = ["hj","ir","jr","jt","ur","j5","k6","ff","dj","dd"]
-var sel = document.getElementById("s");
-var val = sel.value;
-function selectBox(){
-a.forEach(item => item.innerText = object[`t${val}[0]`]);
-b.forEach(item => item.innerText = t19[1]);
-c.forEach(item => item.innerText=t19[2]);
-d.forEach(item => item.innerText=t19[3]);
-e.forEach(item => item.innerText=t19[4]);
-g.forEach(item => item.innerText=t19[5]);
-f.forEach(item => item.innerText=t19[6]);
-h.forEach(item => item.innerText=t19[7]);
-i.forEach(item => item.innerText=t19[8]);
-l.forEach(item => item.innerText=t19[9]);
-};
+    var a = document.querySelectorAll(".a");
+    var b = document.querySelectorAll(".b");
+    var c = document.querySelectorAll(".c");
+    var d = document.querySelectorAll(".d");
+    var e = document.querySelectorAll(".e");
+    var f = document.querySelectorAll(".f");
+    var g = document.querySelectorAll(".g");
+    var h = document.querySelectorAll(".h");
+    var i = document.querySelectorAll(".i");
+    var l = document.querySelectorAll(".l");
+    var t19 = ["화작", "영독작", "사문탐", "현대문학", "수과탐", "확통", "중국어", "융과", "정법", "영어문화"];
+    var t1 = ["hj", "ir", "jr", "jt", "ur", "j5", "k6", "ff", "dj", "dd"]
+    var sel = document.getElementById("s");
+    var val = sel.value;
+
+    function selectBox() {
+        a.forEach(item => item.innerText = object[`t${val}[0]`]);
+        b.forEach(item => item.innerText = t19[1]);
+        c.forEach(item => item.innerText = t19[2]);
+        d.forEach(item => item.innerText = t19[3]);
+        e.forEach(item => item.innerText = t19[4]);
+        g.forEach(item => item.innerText = t19[5]);
+        f.forEach(item => item.innerText = t19[6]);
+        h.forEach(item => item.innerText = t19[7]);
+        i.forEach(item => item.innerText = t19[8]);
+        l.forEach(item => item.innerText = t19[9]);
+    };
 </script>
+
 </html>
